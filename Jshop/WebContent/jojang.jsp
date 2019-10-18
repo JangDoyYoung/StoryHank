@@ -8,12 +8,6 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-안녕하세요 
-안녕하세요 
-안녕하세요 
-안녕하세요 
-안녕하세요 
-안녕하세요 
-안녕하세요 
+<form action=""></form>
 </body>
 </html>

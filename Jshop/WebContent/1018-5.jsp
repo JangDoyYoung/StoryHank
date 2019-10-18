@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-잊지 않으려 반복 중
+
 </body>
 </html>

@@ -1,1 +1,32 @@
-@charset "EUC-KR";
+*{
+	padding: 0;
+	margin: 0;
+}
+.acodian{
+	width: 1200px;
+	height: 600px;
+	border: 1px solid #ddd;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+}
+.acodian div{
+	width: 25%;
+	text-align:center;
+	line-height: 600px;
+	border-right: 1px solid #ddd;
+	transition: .4s;
+}
+.acodian div:hover{
+	background: #ddd;
+}
+.acodian div:last-of-type{
+	border-right: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 40px;
+}

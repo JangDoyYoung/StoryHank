@@ -6,8 +6,30 @@
 <meta charset="utf-8">
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link href="css/index.css" rel="stylesheet">
 </head>
 <body>
+	<div class="header">
+		
+	</div>
+	<div class="container">
+		<div class="acodian">
+			<div class="first">
+				<a href="#">first</a>
+			</div>
+			<div class="second">
+				<a href="#">second</a>
+			</div>
+			<div class="three">
+				<a href="#">three</a>
+			</div>
+			<div class="four">
+				<a href="#">four</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
 	
+	</div>
 </body>
 </html>

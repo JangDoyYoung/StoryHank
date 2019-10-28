@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <style type="text/css">
 	.container div{
-			border: 1px solid gray;
+			border: 0px solid gray;
 			position: absolute;
 	}
 	.title{
@@ -69,7 +69,10 @@
 	.middle1{
 			width: 1898px;
 			height: 500px;
-			background-image: url("btsimage/bts9.jpg");
+			background-image: url("btsimage/bts13.jpg");
+								
+			background-size: cover;
+			background-repeat: no-repeat;
 	}
 	.middle2{
 			width: 1898px;

@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="header">
-		
+		<jsp:include page="header.jsp"/>
 	</div>
 	<div class="container">
 		<div class="acodian">
@@ -24,7 +24,7 @@
 				<a href="#">three</a>
 			</div>
 			<div class="four">
-				<a href="#">four</a>
+				<a href="dy/d_main.jsp">four</a>
 			</div>
 		</div>
 	</div>

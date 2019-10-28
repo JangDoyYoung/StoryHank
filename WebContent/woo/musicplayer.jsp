@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     
         var songs = ["Song1.mp3","Song2.mp3","Song3.mp3"];
         var poster = ["sunmiimage/sunmi5.jpg","sunmiimage/sunmi11.jpg","gasinacover.jpg"];
@@ -70,7 +70,7 @@
             $("#image img").attr("src",poster[currentSong]);
             $("#bg img").attr("src",poster[currentSong]);
         } 
-    </script>
+    </script> -->
 <style type="text/css">
 	body{
 		margin: 0px;
@@ -200,7 +200,7 @@
 		
 	<div id="main">
 		<div id="image">
-			<img alt="" src="sunmiimage/sunmi11.jpg">
+			<img alt="" src="sunmiimage/sunmi5.jpg">
 		</div>
 		<div id="player">
 			<div id="songTitle">가시나</div>

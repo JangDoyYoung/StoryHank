@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <style type="text/css">
 	.container div{
-			border: 0px solid gray;
+			border: 1px solid gray;
 			position: absolute;
 	}
 	.title{

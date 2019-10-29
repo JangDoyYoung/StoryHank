@@ -33,7 +33,7 @@
 .acodian div:last-of-type{
 	border-right: none;
 }
-a{
+.acodian a{
 	text-decoration: none;
 	color: black;
 	font-size: 40px;

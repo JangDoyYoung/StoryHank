@@ -5,36 +5,46 @@
 <title>Story Hank</title>
 <link rel="stylesheet" href="d_css/d_main.css">
 <link rel="stylesheet" href="d_css/fullpage.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="d_js/fullpage.js"></script>
+<link href="../css/index.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   <!-- jquery 3.2.1 cdn -->
+<script src="https://kit.fontawesome.com/ed388964d4.js" crossorigin="anonymous"></script> <!-- 폰트어썸 cdn --> 
+<script src="d_js/fullpage.js"></script>  <!-- 원페이지 스크롤 js -->
 </head>
 <body>
-	<div class="header">
-		<jsp:include page="../header.jsp"/>
-	</div>
 	<div class="container">
 		
 		<div id="fullpage">
 			<div class="section movie_box ">
-				<img src="d_img/movie1.png">	
+				<img src="d_img//joker/movie1.png">	
 				<div class="more_but">
-					<a href="movie1_detail.jsp">MORE</a>	
+					<a href="movie1_detail.html">
+						<i class="fab fa-monero"></i>
+					</a>	
 				</div>
 			</div>
 			<div class="section movie_box">
-				<img src="d_img/movie2.jpg">
+				<img src="d_img/maleficent/movie2.jpg">
 				<div class="more_but">
-					<a href="movie2_detail.jsp">MORE</a>	
+					<a href="movie2_detail.html">
+						<i class="fab fa-monero"></i>
+					</a>	
 				</div>
 			</div>
 			<div class="section movie_box ">
-				<img src="d_img/movie3.png">
+				<img src="d_img/geminman/movie3.png">
 				<div class="more_but">
-					<a href="movie3_detail.jsp">MORE</a>	
+					<a href="movie3_detail.html">
+						<i class="fab fa-monero"></i>
+					</a>	
 				</div>	
 			</div>
 			<div class="section movie_box">
-				
+				<img src="d_img/82year/82year2.jpg">
+				<div class="more_but">
+					<a href="movie4_detail.html">
+						<i class="fab fa-monero"></i>
+					</a>	
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -55,7 +65,7 @@
                 //scrollingSpeed: 1000,
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+                navigationTooltips: ['Joker', 'Maleficent', 'GeminMan','82년생 김지영']
             });
         });
     </script>

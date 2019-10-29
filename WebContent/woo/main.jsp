@@ -27,17 +27,56 @@ $(document).ready(function(){
 
 </script>
 <style type="text/css">
-body {
+	
+	 @font-face{
+    font-family: PAC-FONT;
+    src:url(font/PAC-FONT.TTF) format('truetype');
+	} 
+	
+	body {
 		margin: 0px;
 		padding: 0px;
-		background-color: #ffc200;
+		background-color: #3A3B4C;
+	}
+		#text{
+		font-family: PAC-FONT;
+		font-size: 70px;
+		color: #DA3F47;
+		text-align: center;
+		line-height: 85px;
+		letter-spacing: 5px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		cursor: pointer;
+	}
+	#text::before{
+		content: "FourKet WEBZINE";
+		background: linear-gradient(#FFC929 10%,#E38C41 35%,#FFC929 40%,#E38C41 65%,#FFC929 70%,#E38C41  95%,#FFC929 100%);
+		-webkit-background-clip:text;
+		-webkit-text-fill-color:transparent;
+		position: absolute;
+		top: 7px;
+		left: 14px;
+		opacity: 0;
+		z-index: -1;	
+	}
+	#text:hover{
+		background: linear-gradient(#FFC929 10%,#E38C41 35%,#FFC929 40%,#E38C41 65%,#FFC929 70%,#E38C41  95%,#FFC929 100%);
+		-webkit-background-clip:text;
+		-webkit-text-fill-color:transparent;
+		text-shadow: 0px 0px 10px #DA3F47, 0px 0px 25px #DA3F47;
+	}
+	#text:hover::before{
+		opacity: 0.3;
 }
 	#main{
 		height: 100vh;
 		width: 100%;
 		position: fixed;
 		display: none;
-}
+	}
 	#logoSection{
 		height: 100%;
 		width: 50%;
@@ -45,20 +84,20 @@ body {
 		box-shadow: 10px 0px 30px rgba(0,0,0,.4);
 		position: absolute;
 		z-index: 999;
-}
+	}
    #logoSection img{
 		position: absolute;
 	  	top: 50%;
 		left: 50%; 
 		transform: translate(-50%,-50%);
-}
+	}
 	#menuSection{
 		height: 100%;
 		width: 50%;
 		background-color: #f1f1f1;
 		position: absolute;
 		left: 50%;
-}
+	}
 	#menuSection ul{
 		list-style: none;
 		margin: 0px;
@@ -112,6 +151,7 @@ body {
 
 </head>
 <body>
+<div id="text">FourKet WEBZINE</div>
 
 <div id="openMenu">
 	<img alt="" src="image/open.png" style="width: 100px; height: 100px;"/>
@@ -131,21 +171,28 @@ body {
 					<div class="rotate">T</div>
 				</div>
 			</li>	
-			<li onmouseover="anim('MusicVideo')">
-				<div id="MusicVideo" class="menu">
+			<li onmouseover="anim('video')">
+				<div id="video" class="menu">
 					VIDE
 					<div class="rotate">O</div>
 				</div>
 			</li>
-			<li onmouseover="anim('services')">
-				<div id="services" class="menu">
+			<li onmouseover="anim('music')">
+				<div id="music" class="menu">
 					MUSI
 					<div class="rotate">C</div>
+				</div>
+			</li>
+			<li onmouseover="anim('photo')">
+				<div id="photo" class="menu" onclick="location.href='photo.jsp'">
+					PHOT
+					<div class="rotate">O</div>
 				</div>
 			</li>
 		</ul>
 	</div>
 </div>
+
 </body>
 <script type="text/javascript">
 		

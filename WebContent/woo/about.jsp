@@ -32,7 +32,7 @@
 		height: 200%;
 	}
 	#main{
-		height: 100vh;
+		height: 100vh; 
 		width: 130px;
 		background-color: white;
 		position: fixed;
@@ -44,50 +44,15 @@
 		font-size: 60px;
 		position: fixed;
 		top: 100px; 
-		left: -360px;
+		left:-360px;
 		transform: rotate(-90deg);	
 		transition: all .25s linear;
 	}
-
-
-
-
 </style>
 </head>
 <body>
 	<div id="main">
 		<span>it's time for a new adventure</span>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Fourket</title>
+<title>Fourket : 커뮤니티</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link href="css/community.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">

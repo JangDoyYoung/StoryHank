@@ -138,8 +138,7 @@
             <div id="blackLayer"></div>
             <img src="image1/Poster1.jpg"/>
         </div>
-       
-        <div id="main">
+         <div id="main">
             <div id="image">
                 <img src="image1/Poster1.jpg"/>
             </div>

@@ -8,7 +8,6 @@
 <style type="text/css">
 	.container div{
 			border: 1px solid gray;
-			position: absolute;
 	}
 	.title{
 			width: 1898px;
@@ -145,13 +144,13 @@
 			left: 949px;
 			background-image: url("chunghaimage/chungha4.jpg");
 	}
-		#button1{
+	.btns{
 		width: 200px;
 		height: 50px;
 		font-family: arial;
 		color: #ee3769;
 		position: absolute;
-		top: 70%;
+		top: 50%;
 		left: 20%;
 		transform: translate(-50%,-50%);
 		cursor: pointer;
@@ -160,9 +159,26 @@
 		line-height: 50px;
 		overflow: hidden;
 		trnasition: color 0.3s ease-out;
-		background-color: #fff
+		background-color: #fff;
 	}
-	#button1::before{
+	#button2{
+		width: 200px;		
+		height: 50px;
+		font-family: arial;
+		color: #ee3769;
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		transform: translate(-50%,-50%);
+		cursor: pointer;
+		border: 1px solid #ee3769;
+		text-align: center;
+		line-height: 50px;
+		overflow: hidden;
+		trnasition: color 0.3s ease-out;
+		background-color: #fff;
+	}
+	.btns::before{
 		position:absolute;
 		top: 0;
 		left: 0;
@@ -178,12 +194,16 @@
 		transition: box-shadow 0.3s ease-out;
 		z-index: -1;
 	}
-	#button1:hover {
+	.btns:hover {
 		color: #fff;
-}
-	#button1:hover::before {
-		box-shadow: inset 0 0 0 160px #ee3769;
-}
+	}
+	
+	#button2:hover{
+		color: red;
+	}
+	.btns:hover::before {
+		box-shadow:inset 0 0 0 160px #ee3769;
+	}
 	
 	
 </style>
@@ -200,7 +220,7 @@
   	<div class="header1">
   		<div style="width: 450px; height: 480px;" class="header1_1">01 (header1_1)</div>
   		<div style="width: 800px; height: 480px; left: 450px;" class="header1_2">기사 (header1_2)
-  			<button type="button" id="button1">Read More</button>
+  			<button type="button" class="btns">Read More</button>
   		</div>
   		<div style="left: 1250px; width: 650px; height: 480px;" class="header1_3">앨범커버 (header1_3)</div>
   	</div>
@@ -215,7 +235,7 @@
   	<div class="middle1">사진 (middle1)
   		<div class="middle1_1" style="width:250px; height: 200px;left: 150px; top: 100px; ">02 (middle1_1)</div>
   		<div class="middle1_2" style="left: 500px; top: 50px; width: 500px; height: 400px;">글 (middle1_2)
-  			<button type="button" id="button2">Read More</button>
+  			<button type="button" class="btns">Read More</button>
   		</div>
   		<div></div>
   	</div>
@@ -236,7 +256,7 @@
   <div class="last">
   	<div class="last1">
   		<div class="last1_1">기사 (last1_1)
-  			<button type="button4" id="button">Read More</button>
+  			<button type="button" id="button4">Read More</button>
   		</div>
   		<div class="last1_2">사진 (last1_2)
   			<div class="last1_2_1">03 (last1_2_1)</div>

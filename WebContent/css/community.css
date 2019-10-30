@@ -1,0 +1,77 @@
+.cm_title{
+    text-align: center;
+    font-size: 50px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.text_list{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.text_list table{
+    font-size: 13px;
+    border-collapse: collapse;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.text_list table tr{
+    border-bottom: 1px solid #ddd;
+}
+.text_list table .title{
+    border-top: 1px solid #ddd;
+    background: rgba(0,0,0,.1);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.text_list table td{
+    text-align: center;
+}
+.text_list table .info td:nth-of-type(2){
+    text-align: left;
+}
+.text_list table .info:hover{
+    background: #ddd;
+}
+.but_line p{
+    float: right;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.but_line p:hover{
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+.text_list_but{
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.text_list_but p{
+    width: 130px;
+    height: 40px;
+    background: #ddd;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+}
+.text_list_but p:hover{
+    background: #333;
+    color: #fff;
+}

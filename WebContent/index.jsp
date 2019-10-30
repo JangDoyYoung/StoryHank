@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>Fourket</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link href="css/index.css" rel="stylesheet">
 </head>
@@ -13,20 +13,42 @@
 		<jsp:include page="header.jsp"/>
 	</div>
 	<div class="container">
-		<div class="acodian">
-			<div class="first">
-				<a href="#">first</a>
-			</div>
-			<div class="second">
-				<a href="#">second</a>
-			</div>
-			<div class="three">
-				<a href="#">three</a>
-			</div>
-			<div class="four">
-				<a href="dy/d_main.jsp">four</a>
-			</div>
-		</div>
+    <div class="accordion">
+      <ul>
+        <li tabindex="1">
+          <div>
+            <a href="#">
+              <h2>First</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="2">
+          <div>
+            <a href="#">
+              <h2>Second</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="3">
+          <div>
+            <a href="#">
+              <h2>Third</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </a>
+          </div>
+        </li>
+        <li tabindex="4">
+          <div>
+            <a href="dy/d_main.html">
+              <h2>Four</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
 	</div>
 	<div class="footer">
 	

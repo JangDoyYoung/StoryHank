@@ -35,19 +35,19 @@ iframe{
 	left: 100px;
 }
 .actors1{
-	background: url(../d_img/maleficent/bg7.png) no-repeat;
+	background: url(../d_img/normal/bg1.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .actors2{
-	background: url(../d_img/maleficent/bg9.png) no-repeat;
+	background: url(../d_img/normal/bg2.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .actors3{
-	background: url(../d_img/maleficent/bg4.png) no-repeat;
+	background: url(../d_img/normal/bg4.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .actors4{
-	background: url(../d_img/maleficent/bg2.jpg) no-repeat;
+	background: url(../d_img/normal/bg5.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .actors .actors_img{

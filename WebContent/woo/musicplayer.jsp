@@ -136,11 +136,11 @@
     <body>
         <div id="bg">
             <div id="blackLayer"></div>
-            <img src="image1/Poster1.jpg"/>
+            <img src="sunmiimage/sunmi3.png"/>
         </div>
          <div id="main">
             <div id="image">
-                <img src="image1/Poster1.jpg"/>
+                <img src="sunmiimage/sunmi3.png"/>
             </div>
             <div id="player">
                 <div id="songTitle">가시나</div>
@@ -160,7 +160,7 @@
      <script type="text/javascript">
     
         var songs = ["Song1.mp3","Song2.mp3","Song3.mp3"];
-        var poster = ["Poster1.jpg","Poster2.jpg","Poster3.jpg"];
+        var poster = ["sunmiimage/sunmi3.png","sunmiimage/gasinacover.jpg","sunmiimage/siren.jpg"];
         
         var songTitle = document.getElementById("songTitle");
         var fillBar = document.getElementById("fill");
@@ -196,7 +196,7 @@
             var position = song.currentTime / song.duration;
             
             fillBar.style.width = position * 100 +'%';
-        });
+      	  });
         
     
         function next(){
@@ -209,7 +209,7 @@
             $("#play img").attr("src","Pause.png");
             $("#image img").attr("src",poster[currentSong]);
             $("#bg img").attr("src",poster[currentSong]);
-        }
+      	  }
     
         function pre(){
             
@@ -221,6 +221,6 @@
             $("#play img").attr("src","Pause.png");
             $("#image img").attr("src",poster[currentSong]);
             $("#bg img").attr("src",poster[currentSong]);
-        }
+      	  }
     </script>
 </html>

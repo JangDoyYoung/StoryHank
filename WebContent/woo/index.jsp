@@ -63,6 +63,7 @@
 		left: 50%;
 		transform: translate(-50%,-50%);
 		cursor: pointer;
+		z-index: 999;
 	}
 	#text::before{
 		content: "FourKet WEBZINE";
@@ -209,11 +210,11 @@
 	
 	<div>
 		<div id="menu">
-			<div id="m1" class="m" onclick="location.href='NewFile.jsp'">SunMi</div>
-			<div id="m2" class="m">B-T-S</div>
-			<div id="m3" class="m">ChungHa</div>
-			<div id="m4" class="m">....</div>
-			<div id="m5" class="m">home</div>
+			<div id="m1" class="m" onclick="location.href='mainsunmi.jsp'">SunMi</div>
+			<div id="m2" class="m" onclick="location.href='mainbts.jsp'">B-T-S</div>
+			<div id="m3" class="m" onclick="location.href='mainchungha.jsp'">ChungHa</div>
+			<div id="m4" class="m" onclick="location.href='maincommingsoon.jsp'">....</div>
+			<div id="m5" class="m" onclick="location.href='../index.jsp'">home</div>
 		</div>
 	</div>
 	

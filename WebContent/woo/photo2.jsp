@@ -12,58 +12,58 @@
 		
 			n=0;
 		
-		$("#sunmi1").click(function(){
+		$("#chungha1").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi1.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha1.jpg');
 		
 			n=1;
 		});
 		
-		$("#sunmi2").click(function(){
+		$("#chungha2").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi2.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha2.jpg');
 			
 			n=2;
 		});
 		
-		$("#sunmi3").click(function(){
+		$("#chungha3").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi3.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha3.jpg');
 			
 			n=3;
 		});
 		
-		$("#sunmi4").click(function(){
+		$("#chungha4").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi4.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha4.jpg');
 			
 			n=4;
 		});
 		
-		$("#sunmi5").click(function(){
+		$("#chungha5").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi5.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha5.jpg');
 			
 			n=5;
 		});
 		
-		$("#sunmi6").click(function(){
+		$("#chungha6").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi6.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha6.jpg');
 			
 			n=6;
 		});
 		
-		$("#sunmi7").click(function(){
+		$("#chungha7").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi7.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha7.jpg');
 			
 			n=7;
 		});
 
-		$("#sunmi8").click(function(){
+		$("#chungha8").click(function(){
 			$("#bigImage").fadeIn();
-			$("#bigImage img").attr('src','sunmiimage/sunmi8.jpg');
+			$("#bigImage img").attr('src','chunghaimage/chungha8.jpg');
 			
 			n=8;
 		});
@@ -77,42 +77,42 @@
 				
 			 if(n==1)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi2.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha2.jpg');
 					n=2;
 				}
 				else if(n==2)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi3.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha3.jpg');
 					n=3;
 				}
 				else if(n==3)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi4.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha4.jpg');
 					n=4;
 				}
 				else if(n==4)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi5.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha5.jpg');
 					n=5;
 				}
 				else if(n==5)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi6.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha6.jpg');
 					n=6;
 				}
 				else if(n==6)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi7.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha7.jpg');
 					n=7;
 				}
 				else if(n==7)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi8.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha8.jpg');
 					n=8;
 				}
 				else
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi1.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha1.jpg');
 					n=1;
 				} 
 				
@@ -122,52 +122,52 @@
 			
 			 if(n==1)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi8.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha8.jpg');
 					n=8;
 				}
 				else if(n==2)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi1.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha1.jpg');
 					n=1;
 				}
 				else if(n==3)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi2.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha2.jpg');
 					n=2;
 				}
 				else if(n==4)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi3.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha3.jpg');
 					n=3;
 				}
 				else if(n==5)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi4.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha4.jpg');
 					n=4;
 				}
 				else if(n==6)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi5.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha5.jpg');
 					n=5;
 				}
 				else if(n==7)
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi6.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha6.jpg');
 					n=6;
 				}
 				else
 				{
-					$("#bigImage img").attr('src','sunmiimage/sunmi7.jpg');
+					$("#bigImage img").attr('src','chunghaimage/chungha7.jpg');
 					n=7;
 				} 
 				
 		});
 		
- 		$("#closeMenu").click(function(){
-			$("#main").fadeOut(200);
-			$("#closeMenu").animate({left: "100%"});
-			$(".menu").animate({left: "-50%"},10);		
-		});
+			$("#closeMenu").click(function(){
+				$("#main").fadeOut(200);
+				$("#closeMenu").animate({left: "100%"});
+				$(".menu").animate({left: "-50%"},10);		
+			});
 	});
 
 </script>
@@ -193,7 +193,7 @@
 		content: '';
 		height: 50px;
 		width: 50px;
-		background-color: #3A3B4C;
+		background-color: #64C47D;
 		position: absolute;
 		top: -10px;
 		left: -10px;
@@ -204,7 +204,7 @@
 		content: '';
 		height: 50px;
 		width: 50px;
-		background-color: #3A3B4C;
+		background-color: #64C47D;
 		position: absolute;
 		top: 210px;
 		left: 310px;
@@ -309,16 +309,11 @@
  		z-index: 999;
 		cursor: pointer;	
 	}
-	table img{
-		box-shadow: 3px 3px 15px 8px black;
-	}
-	
-	
 </style>
 </head>
 <body>
 
-<div id="closeMenu" onclick="location.href='mainsunmi.jsp'">
+<div id="closeMenu" onclick="location.href='mainchungha.jsp'">
 	<img alt="" src="image/back2.png"style="width: 100px; height: 100px;"/>
 </div>
 
@@ -326,25 +321,25 @@
 	<tr>
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi1.jpg" width="100%" height="100%" id="sunmi1"/>
+				<img alt="" src="chunghaimage/chungha1.jpg" width="100%" height="100%" id="chungha1"/>
 			</div>
 		</td>
 		
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi2.jpg" width="100%" height="100%" id="sunmi2"/>
+				<img alt="" src="chunghaimage/chungha2.jpg" width="100%" height="100%" id="chungha2"/>
 			</div>
 		</td>
 		
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi3.jpg" width="100%" height="100%" id="sunmi3"/>
+				<img alt="" src="chunghaimage/chungha3.jpg" width="100%" height="100%" id="chungha3"/>
 			</div>
 		</td>
 		
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi4.jpg" width="100%" height="100%" id="sunmi4"/>
+				<img alt="" src="chunghaimage/chungha4.jpg" width="100%" height="100%" id="chungha4"/>
 			</div>
 		</td>
 	</tr>	
@@ -352,24 +347,24 @@
 	<tr>
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi5.jpg" width="100%" height="100%" id="sunmi5"/>
+				<img alt="" src="chunghaimage/chungha5.jpg" width="100%" height="100%" id="chungha5"/>
 			</div>
 		</td>
 		
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi6.jpg" width="100%" height="100%" id="sunmi6"/>
+				<img alt="" src="chunghaimage/chungha6.jpg" width="100%" height="100%" id="chungha6"/>
 			</div>
 		</td>
 		
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi7.jpg" width="100%" height="100%" id="sunmi7"/>
+				<img alt="" src="chunghaimage/chungha7.jpg" width="100%" height="100%" id="chungha7"/>
 			</div>
 		</td>
 		<td>
 			<div class="image">
-				<img alt="" src="sunmiimage/sunmi8.jpg" width="100%" height="100%" id="sunmi8"/>
+				<img alt="" src="chunghaimage/chungha8.jpg" width="100%" height="100%" id="chungha8"/>
 			</div>
 		</td>
 	</tr>	

@@ -44,7 +44,7 @@ $(document).ready(function(){
 	}
    #logoSection img{
 		position: absolute;
-	  	top: 50%;
+	  	top: 43%;
 		left: 50%; 
 		transform: translate(-50%,-50%);
 	}
@@ -93,30 +93,25 @@ $(document).ready(function(){
 		width: 100px;
 		/* background-color: #262626; */
 		position: fixed;
-		top: 50%;
-		left: 0%;
+		top: 8%;
+		left: 93%;
 		transform: translateY(-50%);
  		z-index: 999;
 		cursor: pointer;	
 	}
-	#closeMenu{
-		left: 90%;
-	}
-	
-
 </style>
 
 </head>
 <body>
 
 <div id="closeMenu" onclick="location.href='index.jsp'">
-	<img alt="" src="image/cross.png"style="width: 100px; height: 100px;"/>
+	<img alt="" src="image/cross1.png"style="width: 100px; height: 100px;"/>
 </div>
 
 <div id="main">
 
 	<div id="logoSection">
-		<img alt="" src="sunmiimage/sunmi27.jpg"/>
+		<img alt="" src="sunmiimage/sunmi23.jpg"/>
 	</div>
 	<div id="menuSection">
 		<ul>
@@ -132,7 +127,7 @@ $(document).ready(function(){
 					<div class="rotate">O</div>
 				</div>
 			</li>
-			<li onmouseover="anim('music')" onclick="location.href='music.jsp'">
+			<li onmouseover="anim('music')" onclick="location.href='musicplayer.jsp'">
 				<div id="music" class="menu">
 					MUSI
 					<div class="rotate">C</div>

@@ -61,7 +61,6 @@
 		transform: rotate(-90deg);	
 		transition: all .25s linear;
 	}
-<<<<<<< HEAD
 	.title{
 		font-family: Gloss_And_Bloom;
 		font-size: 100px;
@@ -94,7 +93,6 @@
 		transform: rotate(10deg);	
 		transition: all .30s linear;
 		color: #fff;
-		
 	}
 	#main1{
 		width: 92%;
@@ -164,7 +162,6 @@
 		border: 0px solid black;
 		width: 350px;
 		height: 500px;
-		
 	}
 	#img1{
 		left: 370px;
@@ -185,6 +182,20 @@
 		width: 600px;
 		height: 400px;
 	}
+	.img img{
+		box-shadow: 5px 5px 7px 9px gray;
+	}
+	#closeMenu{
+		height: 100px;
+		width: 100px;
+		/* background-color: #262626; */
+		position: fixed;
+		top: 8%;
+		left: 93%;
+		transform: translateY(-50%);
+ 		z-index: 999;
+		cursor: pointer;	
+	}
 </style>
 </head>
 <body>
@@ -193,12 +204,16 @@
 		<span>it's time for a new adventure</span>
 	</div>
 	
+	<div id="closeMenu" onclick="location.href='mainsunmi.jsp'">
+		<img alt="" src="image/cancel.png"style="width: 100px; height: 100px;"/>
+	</div>
+	
 	<div id="title1" class="title">Full Moon</div>
 	<div id="title2" class="title">Gasina</div>	
 	<div id="title3" class="title">SIREN</div>
 	<div id="title4" class="title"><h2> Sun-Mi</h2></div>
 	
-	<div id="main1">
+	<div id="main1" class="img">
 		<div id="sunmiimage"><img alt="" src="sunmiimage/sunmi1.png" style="width: 95%;"></div>
 	</div>
 	
@@ -255,7 +270,7 @@ JYP에서 메이크어스엔터테인먼트로 이적한 후 처음 선보이는
 	</div>
 	
 	<div class="img" id="img2">
-		<img alt="" src="sunmiimage/gasinacover.jpg" style="width: 350px; height: 500px;"/>
+		<img alt="" src="sunmiimage/gasinacover.jpg" style="width: 400px; height: 500px;"/>
 	</div>
 	
 	<div class="about" id="about3"/>
@@ -283,39 +298,6 @@ JYP에서 메이크어스엔터테인먼트로 이적한 후 처음 선보이는
 	<div class="img" id="img3">
 		<img alt="" src="sunmiimage/siren.jpg" style="width: 450px; height: 450px;"/>
 	</div>
-	
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> refs/remotes/origin/master
 </body>
 </html>

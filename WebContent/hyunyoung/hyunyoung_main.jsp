@@ -35,6 +35,118 @@
 						
 	});
 	
+	$(function(){
+		$("#route1").click(function(){
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route1");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check")!=null)
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}
+					$("#route1_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		
+		$("#route2").click(function(){
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route2");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check")!=null)
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}
+					$("#route2_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		
+		$("#route3").click(function(){
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route3");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check")!=null)
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}				
+					$("#route3_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		
+		$("#route4").click(function(){
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route4");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check")!=null)
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}				
+					$("#route4_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		
+		
+	});
+	
 </script>
 
 <style>
@@ -157,6 +269,10 @@
  		top: 85px;
  		left: -161px;
  	}
+ 	.routeicon:hover
+ 	{
+ 		cursor: pointer;
+ 	}
  	/* .r_bus
  	{
  		position: relative;
@@ -189,11 +305,6 @@
  		top: 85px;
  		left: 162px;
  	}
- 	/* .routepoint
- 	{
- 		margin: 0 auto;
- 		width: 1000px;
- 	} */
  	.rp
  	{
  		position: relative;
@@ -259,14 +370,59 @@
 						<p class="daytitletext"><strong>동네산책</strong></p>
 					</div>
 					<div class="day_route">
-						<div class="route1">
+						<div class="routeday1">
 							<div class="routeicon">
-								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기">
-								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스"> -->
-								<img alt="기차" src="image/train.png" class="r_train" title="기차">
-								<img alt="택시" src="image/taxi.png" class="r_taxi" title="택시">
-								<img alt="도보" src="image/walk1.png" class="r_walk" title="도보">
+								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="route1">
+								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스" r_bus> -->
+								<img alt="기차" src="image/train.png" class="r_train" title="기차" id="route2">
+								<img alt="택시" src="image/taxi.png" class="r_taxi" title="택시" id="route3">
+								<img alt="도보" src="image/walk1.png" class="r_walk" title="도보" id="route4">
 							</div>
+							
+							<div class="routepoint">
+								<div class="rp circle r1_circle"><div class="rtext">인천국제공항</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r2_circle"><div class="rtext">칸사이국제공항</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r3_circle"><div class="rtext">교토역</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r4_circle"><div class="rtext">글래드원호텔</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r5_circle"><div class="rtext">카모강변</div></div>
+							</div>
+						</div>
+						
+					</div>
+				
+					<div class="day_content">
+						<p>
+							일본 여행이 처음이 아니지만 그래도 북해도는 처음이었고 넓은 지역을 편하게 다닐 
+							생각으로 렌트까지 했었다. 이동거리는 생각보다 엄청났고 그 덕에 나는 피로회복제를 
+							먹으면서까지 운전을 했던 기억이 났다. 너무나 가고 싶었던 하코다테를 갔으나 무리한 
+							일정 탓이었을까 천천히 둘러보지 못해 뭔가 아쉬움이 많이 남았던 여행이었다.
+						</p>
+						<p>
+							이번에는 혼자 가는 여행이고 가볍게 다녀오자는 생각에 아무 일정도 없이, 호텔 
+							예약도 없이, 렌트도 없이 (생각해보면 제정신이 아닌 듯;) 백팩에 짐을 쑤셔 넣고는 
+							공항으로 출발했다. 수화물 짐이 없다 보니 용량이 큰 내 화장품들은 모두 출국거부를 
+							당하고 (비행기 시간 촉박한데) 뛰어 뛰어 힘들게 비행기에 몸을 싣고 삿포로로 향했다.
+						</p>
+					</div>
+				</div>
+				<div class="content2">
+					<div class="day_title">
+						<p class="daytitletext"><strong>단풍이 빨갛게 된 곳으로</strong></p>
+					</div>
+					<div class="day_route">
+						<div class="routeday2">
+							<div class="routeicon">
+								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="r_plane">
+								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스" r_bus> -->
+								<img alt="기차" src="image/train.png" class="r_train" title="기차" id="r_train">
+								<img alt="택시" src="image/taxi.png" class="r_taxi" title="택시" id="r_taxi">
+								<img alt="도보" src="image/walk1.png" class="r_walk" title="도보" id="r_walk">
+							</div>
+							
 							<div class="routepoint">
 								<div class="rp circle r1_circle"><div class="rtext">인천국제공항</div></div>
 								<div class="rp line"></div>
@@ -296,34 +452,33 @@
 						</p>
 					</div>
 				</div>
-				<div class="content2">
-					<div class="day_title">
-						<p class="daytitletext"><strong>단풍이 빨갛게 된 곳으로</strong></p>
-					</div>
-					<div class="day_route">
-						<span class="routetext">인천공항 - 칸사이국제공항 - 교토역 - 숙소 - 청수사</span>
-					</div>
-					<div class="day_content">
-						<p>
-							일본 여행이 처음이 아니지만 그래도 북해도는 처음이었고 넓은 지역을 편하게 다닐 
-							생각으로 렌트까지 했었다. 이동거리는 생각보다 엄청났고 그 덕에 나는 피로회복제를 
-							먹으면서까지 운전을 했던 기억이 났다. 너무나 가고 싶었던 하코다테를 갔으나 무리한 
-							일정 탓이었을까 천천히 둘러보지 못해 뭔가 아쉬움이 많이 남았던 여행이었다.
-						</p>
-						<p>
-							이번에는 혼자 가는 여행이고 가볍게 다녀오자는 생각에 아무 일정도 없이, 호텔 
-							예약도 없이, 렌트도 없이 (생각해보면 제정신이 아닌 듯;) 백팩에 짐을 쑤셔 넣고는 
-							공항으로 출발했다. 수화물 짐이 없다 보니 용량이 큰 내 화장품들은 모두 출국거부를 
-							당하고 (비행기 시간 촉박한데) 뛰어 뛰어 힘들게 비행기에 몸을 싣고 삿포로로 향했다.
-						</p>
-					</div>
-				</div>
 				<div class="content3">
 					<div class="day_title">
 						<p class="daytitletext"><strong>집에 가자</strong></p>
 					</div>
 					<div class="day_route">
-						<span class="routetext">인천공항 - 칸사이국제공항 - 교토역 - 숙소 - 청수사</span>
+						<div class="routeday3">
+							<div class="routeicon">
+								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="r_plane">
+								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스" r_bus> -->
+								<img alt="기차" src="image/train.png" class="r_train" title="기차" id="r_train">
+								<img alt="택시" src="image/taxi.png" class="r_taxi" title="택시" id="r_taxi">
+								<img alt="도보" src="image/walk1.png" class="r_walk" title="도보" id="r_walk">
+							</div>
+							
+							<div class="routepoint">
+								<div class="rp circle r1_circle"><div class="rtext">인천국제공항</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r2_circle"><div class="rtext">칸사이국제공항</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r3_circle"><div class="rtext">교토역</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r4_circle"><div class="rtext">글래드원호텔</div></div>
+								<div class="rp line"></div>
+								<div class="rp circle r5_circle"><div class="rtext">카모강변</div></div>
+							</div>
+						</div>
+						
 					</div>
 					<div class="day_content">
 						<p>
@@ -344,5 +499,9 @@
 			</div>
 		</div>
 	</div>
+	<div id="route1_out"></div>
+	<div id="route2_out"></div>
+	<div id="route3_out"></div>
+	<div id="route4_out"></div>
 </body>
 </html>

@@ -33,7 +33,7 @@
         </li>
         <li tabindex="3">
           <div>
-            <a href="woo/main.jsp">
+            <a href="woo/index.jsp">
               <h2>Third</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </a>

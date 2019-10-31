@@ -185,9 +185,6 @@
 		width: 600px;
 		height: 400px;
 	}
-	
-=======
->>>>>>> refs/remotes/origin/master
 </style>
 </head>
 <body>
@@ -195,7 +192,6 @@
 	<div id="main">
 		<span>it's time for a new adventure</span>
 	</div>
-<<<<<<< HEAD
 	
 	<div id="title1" class="title">Full Moon</div>
 	<div id="title2" class="title">Gasina</div>	

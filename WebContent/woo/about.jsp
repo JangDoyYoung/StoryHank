@@ -45,7 +45,7 @@
 		background-color: #FFE4E1;
 	}
 	#main{
-		height: 100vh;
+		height: 100vh; 
 		width: 130px;
 		background-color: white;
 		position: fixed;
@@ -57,10 +57,11 @@
 		font-size: 60px;
 		position: fixed;
 		top: 100px; 
-		left: -360px;
+		left:-360px;
 		transform: rotate(-90deg);	
 		transition: all .25s linear;
 	}
+<<<<<<< HEAD
 	.title{
 		font-family: Gloss_And_Bloom;
 		font-size: 100px;
@@ -185,6 +186,8 @@
 		height: 400px;
 	}
 	
+=======
+>>>>>>> refs/remotes/origin/master
 </style>
 </head>
 <body>
@@ -192,6 +195,7 @@
 	<div id="main">
 		<span>it's time for a new adventure</span>
 	</div>
+<<<<<<< HEAD
 	
 	<div id="title1" class="title">Full Moon</div>
 	<div id="title2" class="title">Gasina</div>	
@@ -315,5 +319,7 @@ JYP에서 메이크어스엔터테인먼트로 이적한 후 처음 선보이는
 
 
 
+=======
+>>>>>>> refs/remotes/origin/master
 </body>
 </html>

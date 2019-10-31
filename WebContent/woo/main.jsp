@@ -38,13 +38,13 @@ $(document).ready(function(){
 		padding: 0px;
 		background-color: #3A3B4C;
 	}
-		#text{
+	#text{
 		font-family: PAC-FONT;
-		font-size: 70px;
+		font-size: 100px;
 		color: #DA3F47;
 		text-align: center;
-		line-height: 85px;
-		letter-spacing: 5px;
+		line-height: 95px;
+		letter-spacing: 10px;
 		position: absolute;
 		top: 50%;
 		left: 50%;

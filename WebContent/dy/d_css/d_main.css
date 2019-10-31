@@ -1,9 +1,6 @@
 body{
 	overflow-x: hidden;
 }
-.movie_box img{
-	width: 100%;
-}
 .remocon{
 	position: fixed;
 	bottom: 300px;
@@ -23,19 +20,26 @@ body{
 .remocon span:hover{
 	border-color: #31708f;
 }
+
 .movie_box{
 	position: relative;
-	margin-top: -4px;
 	width: 100%;
-	height: 100vh;
 	background: #000;
+	text-align: center;
+}
+.movie_box img{
+	height: 100%;
 }
 .movie_box .more_but{
 	position: absolute;
 	bottom: 50px;
-	right: 100px;
+	right: 70px;
 	color: #fff;
 }
 .movie_box .more_but a{
 	color: #fff;
+	text-decoration: none;
+}
+.movie_box .more_but a i{
+	font-size: 30px;
 }

@@ -20,7 +20,7 @@
 		
 		$("#title3").css({top:2750+(scroll*0.40)+"px"}); */
 		
-		$("#title4").css({top:0+(scroll*0.20)+"px"});
+		$("#title4").css({top:0+(scroll*0.30)+"px"});
 	
 	});
 	
@@ -42,7 +42,7 @@
 	body {
 		margin: 0px;
 		padding: 0px;
-		background-color: #FFE4E1;
+		background-color: #FFF;
 	}
 	#main{
 		height: 100vh;
@@ -65,24 +65,24 @@
 		font-family: Gloss_And_Bloom;
 		font-size: 100px;
 		position: absolute;
-		color: red;
+		color: black;
 		text-align: center;
 		
 	}
 	#title1{
-		top: 1500px;
+		top: 1400px;
 		left: 1200px;
-		transform: rotate(20deg);	
+		transform: rotate(10deg);	
 	}
 	#title2{
 		top: 2100px;
 		left: 170px;
-		transform: rotate(-30deg);	
+		transform: rotate(-10deg);	
 	}
 	#title3{
 		top: 2750px;
 		left: 900px;
-		transform: rotate(-20deg);
+		transform: rotate(10deg);
 	}
 	#title4{
 		font-family: Gloss_And_Bloom;
@@ -90,9 +90,9 @@
 		position: fixed;
 		top: 0px; 
 		left: 700px;
-		transform: rotate(10deg);	
+		transform: rotate(-10deg);	
 		transition: all .30s linear;
-		color: #fff;
+		color: black;
 		
 	}
 	#main1{
@@ -105,7 +105,7 @@
 		transform: translate(-50%,-50%);
 		overflow: visible;
 	}
-	#sunmiimage{
+	#btsimage{
 		height: 350px;
 		width: 100%;
 		position: absolute;
@@ -142,10 +142,8 @@
 	
 	#about1_2{
 		left: 70px;
-		text-align: center;
-	
+		text-align: center;	
 		height: 100%;
-		position: absolute;
 	}
 	#about2_2{
 		text-align: center;
@@ -193,39 +191,45 @@
 		<span>it's time for a new adventure</span>
 	</div>
 	
-	<div id="title1" class="title">Full Moon</div>
-	<div id="title2" class="title">Gasina</div>	
-	<div id="title3" class="title">SIREN</div>
-	<div id="title4" class="title"><h2> Sun-Mi</h2></div>
+	<div id="title1" class="title">D&nbsp;N&nbsp;A</div>
+	<div id="title2" class="title">Blood&nbsp;Sweat&nbsp;Tear</div>	
+	<div id="title3" class="title">Boy With Luv</div>
+	<div id="title4" class="title"><h2>B-T-S</h2></div>
 	
 	<div id="main1">
-		<div id="sunmiimage"><img alt="" src="sunmiimage/sunmi1.png" style="width: 95%;"></div>
+		<div id="btsimage"><img alt="" src="btsimage/bts16.jpg" style="height: 900px; width: 1700px;"/></div>
 	</div>
 	
 	<div class="about" id="about1">
 		<div id="about1_2">
-				<h1>뱀파이어로 돌아왔다</h1>
-				<br>
+				<h4> LOVE YOURSELF 結 ‘Answer’</h4>
 		<pre style="text-align: left; font-size: 17px;">
-                     뱀파이어로 변신한 선미가 미니앨범 '보름달'로 컴백하며 하이엔드 섹시미의 진수를 선보입니다. 지난 해 싱글
-                     '24시간이 모자라'로 폭발적인 관심을 받으며 솔로가수로 화려하게 데뷔한 선미는 맨발의 각선미 퍼포먼스와
-                     오묘하고도 맑은 섹시함으로 여자 솔로가수의 새로운 아이콘으로 떠오르며 순식간에 모든 이를 사로잡았습니다.
-                     선미의 새로운 앨범 '보름달'은 여자와 소녀 중간에 서 있는 선미의 오묘한 매력이 담긴 앨범으로,
-                     여섯 개 트랙에 담긴 여섯 가지 선미의 색깔은 물론 누구도 따라올 수 없는 선미의 하이엔드 섹시함을
-                     느낄 수 있습니다.
-                     타이틀곡 '보름달'은 용감한 형제가 프로듀싱 한 곡으로, 섹시한 분위기가 감도는 브라스와 기타사운드 리드와
-                     어우러진 선미의 보이스가 더욱 매력적인 곡이다.
-                     보름달을 매개체로 사랑을 말하는 가사는 '24시간이 모자라'에 이은 또 한번 선미의 성인식을 연상케 하는 한편,
-                     선미의 뱀파이어 컨셉과 환상적으로 만나 강렬한 충격을 주며, 하이엔드 섹시미의 극치를 선보인다.
-                     또한 '내가 누구'는 선미의 첫 번째 미니앨범을 위해 유빈이 랩 피쳐링을, 예은은 자작곡 '그게 너라면'을
-                     선물하며 지원사격에 나서 선미의 매력을 더욱 풍성하게 하며, '멈춰버린 시간'은 GOT7의 잭슨이 랩 피쳐링에
-                     참여하여몽환적 분위기 속에 새로운 선미의 매력을 발견케 한다.
+		              방탄소년단은 리패키지 앨범 LOVE YOURSELF 結 ‘Answer’을 발매하고, 2년 반 동안 이어진 LOVE YOURSELF
+		              시리즈의 대미를 장식한다.2016년 3월부터 시작된 방탄소년단의 LOVE YOURSELF 시리즈는 앨범의 주요수록 
+		              곡들이 하나의 주제로 연결되어, ‘나 자신을 사랑하는 것이 진정한 사랑’이라는 메시지를 전해왔다.
+		              또한, 데뷔 초부터 음악적 완성도를 위해 충분한 곡들을 매 앨범에 담아 온 방탄소년단은 이번 앨범이
+		              리패키지 앨범 임에도 불구하고 7곡의 신곡을 포함했다.
+			      이번 LOVE YOURSELF 結 ‘Answer’ 앨범은 치밀한 기획 아래 LOVE YOURSELF 시리즈의 정수를 담은
+			     ‘콘셉트 앨범’이다.
+			      CD A에 수록된 16곡들은 음악, 스토리, 가사 등이 유기적으로 연결되어, 만남과 사랑으로부터 자아를 찾아가는
+                              감정의 흐름을 따른다. 이번 앨범에서는 서사와 세계관을 강조해온 방탄소년단의 아티스트적 면모뿐 아니라,
+                              잘 구성된 소설을 읽는 것 같은 높은 앨범 완성도를 느낄 수 있다.
+			      모든 것의 결론, 비밀이 드러나다.방탄소년단의 LOVE YOURSELF 시리즈는 기승전결(起承轉結)의 구조로 하나의
+			      주제의식을 관통한다. 짜임새 있는 스토리, 영상, 앨범 트랙, 디자인 등 LOVE YOURSELF의 서사를 따라온
+팬들에게 ‘모든 비밀이 풀리는 열쇠’ 역할을 한다.
+LOVE YOURSELF 起 ‘Wonder’ 영상과 承 ‘Her’ 앨범이 사랑의 설렘과 두근거림을 표현했다면, 轉 ‘Tear’ 앨범은 이별을 마주한 소년들의
+아픔을 담았다. 이번 발표되는 結 ‘Answer’에서는 수많은 모습의 자아 속에서 나를 찾는 유일한 해답은 결국 ‘나’ 자신에게 있다는 내용을
+담았다.
+멤버 진이 부른 컴백 트레일러 'Epiphany'는 정국의 ‘Euphoria’, 지민의 ‘Serendipity’, 뷔의 ‘Singularity’로
+이어져 온 서사의 흐름을 이어 받으며, LOVE YOURSELF 시리즈의 진짜 주제를 명확하게 드러낸다.
+특히, L-O-V-E-Y-O-U-R-S-E-L-F 버전의 앨범 커버를 모두 합쳤을 때 나타나는 디자인과 슬리브 꽃 그림은 만남에서 자아를 찾는 과정까지 감정의
+흐름을 보여준다.
 		</pre>					
 		</div>
 	</div>
 	
 	<div class="img" id="img1">
-		<img alt="" src="sunmiimage/sunmi3.png" style=" width: 400px; height: 400px;"/>
+		<img alt="" src="btsimage/bts.jpg" style=" width: 400px; height: 400px;"/>
 	</div>
 	
 	<div class="about" id="about2">
@@ -255,7 +259,7 @@ JYP에서 메이크어스엔터테인먼트로 이적한 후 처음 선보이는
 	</div>
 	
 	<div class="img" id="img2">
-		<img alt="" src="sunmiimage/gasinacover.jpg" style="width: 350px; height: 500px;"/>
+		<img alt="" src="btsimage/bts13.jpg" style="width: 500px; height: 500px ;"/>
 	</div>
 	
 	<div class="about" id="about3"/>
@@ -281,39 +285,9 @@ JYP에서 메이크어스엔터테인먼트로 이적한 후 처음 선보이는
 	</div>
 	
 	<div class="img" id="img3">
-		<img alt="" src="sunmiimage/siren.jpg" style="width: 450px; height: 450px;"/>
+		<img alt="" src="btsimage/bts2.jpg" style="width: 500px; height: 450px;"/>
 	</div>
 	
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

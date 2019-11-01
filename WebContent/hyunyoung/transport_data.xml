@@ -20,4 +20,23 @@
 		<price>무료</price>
 		<check>기요미즈고조역</check>
 	</route4>
+	<route5>
+		<time>30분</time>
+		<price>230엔</price>
+		<check>도보1키로산행</check>
+	</route5>
+	<route6>
+		<time>11분</time>
+		<price>무료</price>
+		<check>미다라시당고</check>
+	</route6>
+	<route7>
+		<time>30분</time>
+		<price>230엔</price>
+		<check>블루보틀들리기</check>
+	</route7>
+	<route8>
+		<time>35분</time>
+		<price>380엔</price>
+	</route8>
 </transport>

@@ -37,6 +37,7 @@
 	
 	$(function(){
 		$("#route1").click(function(){
+			$(".route_outbox1").addClass("content_b");
 			$.ajax({
 				type:"get",
 				url:"transport_data.xml",
@@ -46,10 +47,11 @@
 					var a=$(data).find("route1");
 					s+="시간 : "+a.find("time").text()+"<br>";
 					s+="가격 : "+a.find("price").text()+"<br>";
-					if(a.find("check")!=null)
+					if(a.find("check").text()!="")
 					{
 						s+="체크 : "+a.find("check").text()+"<br>";
 					}
+					s+="<img src='image/close1.png' class='close'>";
 					$("#route1_out").html(s);
 				},
 				statusCode: {
@@ -64,6 +66,7 @@
 		});
 		
 		$("#route2").click(function(){
+			$(".route_outbox2").addClass("content_b");
 			$.ajax({
 				type:"get",
 				url:"transport_data.xml",
@@ -73,10 +76,11 @@
 					var a=$(data).find("route2");
 					s+="시간 : "+a.find("time").text()+"<br>";
 					s+="가격 : "+a.find("price").text()+"<br>";
-					if(a.find("check")!=null)
+					if(a.find("check").text()!="")
 					{
 						s+="체크 : "+a.find("check").text()+"<br>";
 					}
+					s+="<img src='image/close1.png' class='close'>";
 					$("#route2_out").html(s);
 				},
 				statusCode: {
@@ -91,6 +95,7 @@
 		});
 		
 		$("#route3").click(function(){
+			$(".route_outbox3").addClass("content_b");
 			$.ajax({
 				type:"get",
 				url:"transport_data.xml",
@@ -100,10 +105,11 @@
 					var a=$(data).find("route3");
 					s+="시간 : "+a.find("time").text()+"<br>";
 					s+="가격 : "+a.find("price").text()+"<br>";
-					if(a.find("check")!=null)
+					if(a.find("check").text()!="")
 					{
 						s+="체크 : "+a.find("check").text()+"<br>";
-					}				
+					}		
+					s+="<img src='image/close1.png' class='close'>";
 					$("#route3_out").html(s);
 				},
 				statusCode: {
@@ -118,6 +124,7 @@
 		});
 		
 		$("#route4").click(function(){
+			$(".route_outbox4").addClass("content_b");
 			$.ajax({
 				type:"get",
 				url:"transport_data.xml",
@@ -127,10 +134,11 @@
 					var a=$(data).find("route4");
 					s+="시간 : "+a.find("time").text()+"<br>";
 					s+="가격 : "+a.find("price").text()+"<br>";
-					if(a.find("check")!=null)
+					if(a.find("check").text()!="")
 					{
 						s+="체크 : "+a.find("check").text()+"<br>";
-					}				
+					}	
+					s+="<img src='image/close1.png' class='close'>";
 					$("#route4_out").html(s);
 				},
 				statusCode: {
@@ -144,7 +152,145 @@
 			});
 		});
 		
+		// 2일차 
+		$("#route5").click(function(){
+			$(".route_outbox5").addClass("content_b");
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route5");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check").text()!="")
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}	
+					s+="<img src='image/close1.png' class='close'>";
+					$("#route5_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		$("#route6").click(function(){
+			$(".route_outbox6").addClass("content_b");
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route6");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check").text()!="")
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}	
+					s+="<img src='image/close1.png' class='close'>";
+					$("#route6_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		$("#route7").click(function(){
+			$(".route_outbox7").addClass("content_b");
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route7");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check").text()!="")
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}	
+					s+="<img src='image/close1.png' class='close'>";
+					$("#route7_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
+		$("#route8").click(function(){
+			$(".route_outbox8").addClass("content_b");
+			$.ajax({
+				type:"get",
+				url:"transport_data.xml",
+				dataType:"xml",
+				success:function(data){
+					var s="";
+					var a=$(data).find("route8");
+					s+="시간 : "+a.find("time").text()+"<br>";
+					s+="가격 : "+a.find("price").text()+"<br>";
+					if(a.find("check").text()!="")
+					{
+						s+="체크 : "+a.find("check").text()+"<br>";
+					}	
+					s+="<img src='image/close1.png' class='close'>";
+					$("#route8_out").html(s);
+				},
+				statusCode: {
+					404:function(){
+						alert("url 을 찾을 수 없어요");
+					},
+					500:function(){
+						alert("서버 오류");
+					}
+				}
+			});
+		});
 		
+		$("#route_outbox1",).click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox2").click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox3").click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox4").click(function(){
+			$(this).removeClass("content_b");
+		});
+		
+		$("#route_outbox5",).click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox6").click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox7").click(function(){
+			$(this).removeClass("content_b");
+		});
+		$("#route_outbox8").click(function(){
+			$(this).removeClass("content_b");
+		});
 	});
 	
 </script>
@@ -237,10 +383,7 @@
  	{
  		display: none;
  	}
- 	.content_b
- 	{
- 		display: block;
- 	}
+ 	
  	.day_title
  	{
  		height: 50px;
@@ -255,56 +398,194 @@
  		font-size: 20px;
  		color: #7E7D80;
  	}
+ 	
+ /* 	.routeoutbox
+ 	{
+ 		position: relative;
+ 		top: 75px;
+ 		left: 160px;
+ 		width: 1000px;
+ 		display: inline-block;
+ 		
+ 	} */
+ 	
+ 	.route_outbox1,.route_outbox5
+ 	{
+ 		position: absolute;
+ 		top: 5px;
+ 		left: 179px;
+ 		width: 150px;
+ 		height: 70px; 		
+ 		border-radius: 15px;
+ 		background-color: #F5F5F5;
+ 		box-shadow: 1px 1px 1px 1px gray;
+ 		display: none;
+ 	}
+ 	.route_outbox2,.route_outbox6
+ 	{
+ 		position: absolute;
+ 		top: 5px;
+ 		left: 342px;
+ 		width: 150px;
+ 		height: 70px; 		
+ 		border-radius: 15px;
+ 		background-color: #F5F5F5;
+ 		box-shadow: 1px 1px 1px 1px gray;
+ 		display: none;
+ 	}
+ 	.route_outbox3,.route_outbox7
+ 	{
+ 		position: absolute;
+ 		top: 5px;
+ 		left: 505px;
+ 		width: 150px;
+ 		height: 70px;
+ 		border-radius: 15px;
+ 		background-color: #F5F5F5;
+ 		box-shadow: 1px 1px 1px 1px gray;
+ 		display: none;
+ 	}
+ 	.route_outbox4,.route_outbox8
+ 	{
+ 		position: absolute;
+ 		top: 5px;
+ 		left:669px;
+ 		width: 150px;
+ 		height: 70px;
+ 		border-radius: 15px;
+ 		background-color: #F5F5F5;
+ 		box-shadow: 1px 1px 1px 1px gray;
+ 		display: none;
+ 	}
+ 	.route_out
+ 	{
+ 		position: absolute;
+	    top: 50%; 
+	    left: 50%;
+	    width: 150px;
+	    transform: translate(-50%,-50%);
+  		color: #7D7E7E;	
+  		font-size: 0.8em;
+  		text-align: left;
+  		margin-left: 12px;
+  		font-weight: bold;
+ 	}
  	.day_route
  	{
  		height: 300px;
  		text-align: center;
  	}
- 	
- 	.r_plane
+ 	.routeicon
  	{
  		position: relative;
- 		width: 50px;
- 		height: 50px;
- 		top: 85px;
- 		left: -161px;
+	    width: 1000px;
+	    margin: 0 auto;
  	}
  	.routeicon:hover
  	{
  		cursor: pointer;
  	}
- 	/* .r_bus
+ 	/* 1일차 아이콘 */
+ 	.r_plane
  	{
  		position: relative;
  		width: 50px;
  		height: 50px;
- 		top: 105px;
- 		left: -27px;
- 	} */
+ 		border: 0;
+ 		top: 85px;
+ 		left: -161px;	
+ 	}	
+ 	.r_plane:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
  	.r_train
  	{
  		position: relative;
- 		width: 50px;
- 		height: 50px;
+ 		width: 55px;
+ 		height: 55px;
  		top: 85px;
- 		left: -54px;
+ 		left: -51px;
+ 	}
+ 	.r_train:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
  	}
  	.r_taxi
  	{
  		position: relative;
- 		width: 50px;
- 		height: 50px;
+ 		width: 55px;
+ 		height: 55px;
  		top: 85px;
  		left: 53px;
+ 	}
+ 	.r_taxi:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
  	}
  	.r_walk
  	{
  		position: relative;
- 		width: 48px;
- 		height: 48px;
+ 		width: 50px;
+ 		height: 50px;
  		top: 85px;
- 		left: 162px;
+ 		left: 156px;
  	}
+ 	.r_walk:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
+ 	/* 1일차 아이콘 */
+ 	.r_bus2
+ 	{
+ 		position: relative;
+ 		width: 55px;
+ 		height: 55px;
+ 		top: 94px;
+ 		left: -156px;
+ 	}
+ 	.r_bus2:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
+ 	.r_walk2
+ 	{
+ 		position: relative;
+ 		width: 50px;
+ 		height: 50px;
+ 		top: 85px;
+ 		left: -52px;
+ 	}
+ 	.r_walk2:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
+ 	.r_bus2_1
+ 	{
+ 		position: relative;
+ 		width: 55px;
+ 		height: 55px;
+ 		top: 94px;
+ 		left: 55px;
+ 	}
+ 	.r_bus2_1:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
+ 	.r_train2
+ 	{
+ 		position: relative;
+ 		width: 55px;
+ 		height: 55px;
+ 		top: 87px;
+ 		left: 156px;
+ 	}
+ 	.r_train2:hover
+ 	{
+ 		filter: drop-shadow(3px 3px 3px #c0c0c0);
+ 	}
+ 	
+ 	
  	.rp
  	{
  		position: relative;
@@ -343,6 +624,18 @@
  		margin: 0 auto;
  		width: 800px;
 	}
+	.content_b
+ 	{
+ 		display: block;
+ 	}
+ 	.close
+ 	{
+ 		position: absolute;
+ 		width: 10px;
+ 		height: 10px;
+ 		top: -5px;
+ 		right: 20px;
+ 	}
 	
 </style>
 
@@ -369,9 +662,14 @@
 					<div class="day_title">
 						<p class="daytitletext"><strong>동네산책</strong></p>
 					</div>
+					
 					<div class="day_route">
 						<div class="routeday1">
 							<div class="routeicon">
+								<div id="route_outbox1" class="route_outbox1"><div id="route1_out" class="route_out"></div></div>
+								<div id="route_outbox2" class="route_outbox2"><div id="route2_out" class="route_out"></div></div>
+								<div id="route_outbox3" class="route_outbox3"><div id="route3_out" class="route_out"></div></div>
+								<div id="route_outbox4" class="route_outbox4"><div id="route4_out" class="route_out"></div></div>
 								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="route1">
 								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스" r_bus> -->
 								<img alt="기차" src="image/train.png" class="r_train" title="기차" id="route2">
@@ -411,28 +709,34 @@
 				</div>
 				<div class="content2">
 					<div class="day_title">
-						<p class="daytitletext"><strong>단풍이 빨갛게 된 곳으로</strong></p>
+						<p class="daytitletext"><strong>빨간 단풍잎이 있는 곳으로</strong></p>
 					</div>
 					<div class="day_route">
 						<div class="routeday2">
 							<div class="routeicon">
-								<img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="r_plane">
-								<!-- <img alt="버스" src="image/bus.png" class="r_bus" title="버스" r_bus> -->
-								<img alt="기차" src="image/train.png" class="r_train" title="기차" id="r_train">
-								<img alt="택시" src="image/taxi.png" class="r_taxi" title="택시" id="r_taxi">
-								<img alt="도보" src="image/walk1.png" class="r_walk" title="도보" id="r_walk">
+								<div id="route_outbox5" class="route_outbox5"><div id="route5_out" class="route_out"></div></div>
+								<div id="route_outbox6" class="route_outbox6"><div id="route6_out" class="route_out"></div></div>
+								<div id="route_outbox7" class="route_outbox7"><div id="route7_out" class="route_out"></div></div>
+								<div id="route_outbox8" class="route_outbox8"><div id="route8_out" class="route_out"></div></div>
+								<!-- <img alt="비행기" src="image/plane.png" class="r_plane" title="비행기" id="r_plane"> -->
+								<img alt="버스" src="image/bus.png" class="r_bus2" title="버스" id="route5">
+								<img alt="도보" src="image/walk1.png" class="r_walk2" title="도보" id="route6">
+								<img alt="버스" src="image/bus.png" class="r_bus2_1" title="버스" id="route7">
+								<img alt="기차" src="image/train.png" class="r_train2" title="기차" id="route8">
+								
+								
 							</div>
 							
 							<div class="routepoint">
-								<div class="rp circle r1_circle"><div class="rtext">인천국제공항</div></div>
+								<div class="rp circle r1_circle"><div class="rtext">글래드원호텔</div></div>
 								<div class="rp line"></div>
-								<div class="rp circle r2_circle"><div class="rtext">칸사이국제공항</div></div>
+								<div class="rp circle r2_circle"><div class="rtext">청수사</div></div>
 								<div class="rp line"></div>
-								<div class="rp circle r3_circle"><div class="rtext">교토역</div></div>
+								<div class="rp circle r3_circle"><div class="rtext">니넨자카,산넨자카</div></div>
 								<div class="rp line"></div>
-								<div class="rp circle r4_circle"><div class="rtext">글래드원호텔</div></div>
+								<div class="rp circle r4_circle"><div class="rtext">난젠지</div></div>
 								<div class="rp line"></div>
-								<div class="rp circle r5_circle"><div class="rtext">카모강변</div></div>
+								<div class="rp circle r5_circle"><div class="rtext">글래드원호텔</div></div>
 							</div>
 						</div>
 						
@@ -499,9 +803,12 @@
 			</div>
 		</div>
 	</div>
-	<div id="route1_out"></div>
-	<div id="route2_out"></div>
-	<div id="route3_out"></div>
-	<div id="route4_out"></div>
+	<!-- <div class="routeoutbox">
+		<div class="route_outbox1"><div id="route1_out" class="route_out"></div></div>
+		<div class="route_outbox2"><div id="route2_out" class="route_out"></div></div>
+		<div class="route_outbox3"><div id="route3_out" class="route_out"></div></div>
+		<div class="route_outbox4"><div id="route4_out" class="route_out"></div></div>
+	</div> -->
+	
 </body>
 </html>

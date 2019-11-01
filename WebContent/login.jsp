@@ -56,9 +56,9 @@
 			<input type="password" placeholder="Password" class="sign" id="pass1" required="required"/><br>
 			<input type="password" placeholder="비밀번호확인" class="sign" id="pass2" required="required"/>
 			<br>
-			<input type="text" placeholder="Name" class="sign"/><br>
-			<input type="text" placeholder="Nick Name" class="sign"/><br>
-			<input type="text" placeholder="Email" class="sign" id="email1"/><br>
+			<input type="text" placeholder="Name" class="sign" required="required"/><br>
+			<input type="text" placeholder="Nick Name" class="sign" required="required"/><br>
+			<input type="text" placeholder="Email" class="sign" id="email1" required="required"/><br>
 			<input type="text" placeholder="@" class="sign" id="email2"/>
 				<select id="selemail">
 							<option value="@">직접입력</option>

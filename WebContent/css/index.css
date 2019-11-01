@@ -8,7 +8,7 @@
 }
 @font-face{
     font-family: PAC-FONT;
-    src:url(../font/PAC-FONT.TTF) format('truetype');
+    src:url(../woo/font/PAC-FONT.TTF) format('truetype');
 	} 
 .header{
 	width: 100%;
@@ -175,6 +175,21 @@
   margin-bottom: 2px;
   top: 160px;
 }
+.accordion ul li div a h3 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+  transform: rotate(-20deg);
+}
+#idol{
+	font-family: PAC-FONT;
+	font-size: 70px;
+	transform: rotate(-5deg);
+}
+
 .accordion ul li div a p {
   top: 160px;
   font-size: 13.5px;

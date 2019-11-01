@@ -26,8 +26,13 @@
         <li tabindex="2">
           <div>
             <a href="#">
+<<<<<<< HEAD
               <h2>교토 산책</h2>
               <p>완연한 가을의 교토의 풍경을 즐길 수 있는 여행기</p>
+=======
+              <h2>교토산책</h2>
+              <p>완연한 가을의 이국적인 풍경을 즐길 수 있는 여행기</p>
+>>>>>>> branch 'master' of https://github.com/JangDoyYoung/StoryHank.git
             </a>
           </div>
         </li>

@@ -75,21 +75,19 @@
 			</div>
 		</div>
 		<div class="text_list" id="guestboard">
-			<table id="guest_list">
-				<tr class="title" style="height: 50px;">
-					<td style="width: 80px;">번호</td>
-					<td style="width: 1000px;">제목</td>
-					<td style="width: 100px;">이름(닉네임)</td>
-					<td style="width: 90px;">작성일</td>
-				</tr>
-			</table>
-			<div class="but_line">
-				<p>글쓰기</p>
-			</div>
+			<div class="text_enter">
+	           <textarea class="lineword"  placeholder="한줄짜리 글을 남겨보세요"></textarea>
+	            <p class="enter_but" id="enter_but">메모하기</p>
+	       </div>
+	       <div id="guest_list" class="guest_list">
+	       		
+	       </div>
 		</div>
 	</div>
 	<script>
     $(document).ready(function(){
+    	list();
+    	
         $("#qaboard").hide();
         $("#guestboard").hide();
       
@@ -120,28 +118,23 @@
 	        $(".side_menu").css("right","-350px"); 
 	     });
 	     
-	     $.ajax({
-				type: "get",
-				url: "community_list.jsp",
-				dataType: "xml",
-				
-				success: function(data)
-				{
+	     
+	     
+	     $("#enter_but").click(function(){
+	    	 $.ajax({
+	    		type: "post",
+	    		url: "guestbook_insert.jsp",
+	    		dataType: "xml",
+	    		data : {"subject":subject},
+	    		
+	    		success : function(data){
 					var str = "";
+
 					
-					$(data).find("memodata").each(function(){
-						var s = $(this);
-						str += "<tr class='info'  style='height: 50px;'>";
-						str += "<td>" + s.find("num").text() + "</td>";
-						str += "<td>" + s.find("subject").text() + "</td>";
-						str += "<td>" + s.find("nickname").text() + "</td>";
-						str += "<td>" + s.find("wdate").text() + "</td>";
-						str += "</tr>";
-						$("#guest_list").append(str);
-					});
-					
-					
+					// 추가후 메모리스트 다시 출력
+					list();
 				},
+				
 				statusCode : {
 					404: function(){
 						alert("url을 찾을수 없어요");
@@ -150,7 +143,44 @@
 						alert("서버 오류");
 					}
 				}
-			});
+				
+	    	 });
+	     });
+	     
+	     function list()
+	     {
+	    	 $.ajax({
+					type: "get",
+					url: "community_list.jsp",
+					dataType: "xml",
+					
+					success: function(data)
+					{
+						var str = "";
+						
+						$(data).find("memodata").each(function(){
+							var s = $(this);
+							str += "<div>";
+							str += "<p class='name_date'>";
+							str += "<span>" + s.find("nickname").text() + "</span>";
+							str += "<span>" + s.find("wdate").text() + "</span>";
+							str += "</p>";
+							str += "<p>" + s.find("subject").text() + "</p>";
+							str += "</div>";
+						});
+						$("#guest_list").append(str);
+						
+					},
+					statusCode : {
+						404: function(){
+							alert("url을 찾을수 없어요");
+						},
+						500: function(){
+							alert("서버 오류");
+						}
+					}
+				});
+	     }
     });
 </script>
 </body>

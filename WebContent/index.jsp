@@ -33,9 +33,9 @@
         </li>
         <li tabindex="3">
           <div>
-            <a href="woo/main.jsp">
-              <h2>Third</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <a href="woo/index.jsp">
+              <h3>장도영 멋쟁이</h3>
+              <p id="idol">I-DOL</p>
             </a>
           </div>
         </li>
@@ -51,7 +51,6 @@
     </div>
 	</div>
 	<div class="footer">
-	
 	</div>
 </body>
 </html>

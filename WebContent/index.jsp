@@ -26,8 +26,8 @@
         <li tabindex="2">
           <div>
             <a href="#">
-              <h2>Second</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <h2>교토 산책</h2>
+              <p>완연한 가을의 교토의 풍경을 즐길 수 있는 여행기</p>
             </a>
           </div>
         </li>

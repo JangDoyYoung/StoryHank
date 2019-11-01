@@ -13,13 +13,7 @@
 		var scroll = $(window).scrollTop();
 		
 		$("span").css({top:100+(scroll*0.40)+"px"});
-		
-/* 		$("#title1").css({top:1500+(scroll*0.40)+"px"});
-		
-		$("#title2").css({top:2100+(scroll*0.40)+"px"});
-		
-		$("#title3").css({top:2750+(scroll*0.40)+"px"}); */
-		
+	
 		$("#title4").css({top:0+(scroll*0.20)+"px"});
 	
 	});

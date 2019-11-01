@@ -35,7 +35,7 @@
           <div>
             <a href="woo/index.jsp">
               <h2>Third</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p><h2 style="font-family:PAC-FONT;">I-DOL</h2></p>
             </a>
           </div>
         </li>

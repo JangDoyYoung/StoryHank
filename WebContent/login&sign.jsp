@@ -15,8 +15,8 @@
 			$("#loginform").css("visibility","hidden");
 			$("#loginform").animate({left:"25%"},400);
 			
+			$("#signform").animate({left:"25%"},400);
 			$("#signform").animate({left:"30%"},400);
-			$("#signform").animate({left:"40%"},400);
 			$("#signform").css("visibility","visible");
 		});
 		

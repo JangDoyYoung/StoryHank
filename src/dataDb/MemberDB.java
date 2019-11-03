@@ -101,10 +101,92 @@ public	void insertMember(MemberDto dto)
 		return list;
 		
 	}
+public MemberDto getData(String num)
+{
+	MemberDto dto = new MemberDto();
+	Connection conn = db.getConnection();
+	PreparedStatement pstmt = null;
+	ResultSet rs=null;
+	String sql="select * from member where num=?";
+	
+	try {
+		pstmt=conn.prepareStatement(sql);
+		pstmt.setString(1, num);
+		
+		rs=pstmt.executeQuery();
+		
+		if(rs.next())
+		{
+			dto.setNum(rs.getString("num"));
+			dto.setName(rs.getString("name"));
+			dto.setNickname(rs.getString("nickname"));
+			dto.setId(rs.getString("id"));
+			dto.setPass(rs.getString("pass"));
+			dto.setEmil1(rs.getString("email1"));
+			dto.setEmail2(rs.getString("email2"));
+			dto.setGaipday(rs.getTimestamp("gaipday"));
+			
+		}
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}finally {
+		db.dbClose(rs, pstmt, conn);
+	}
+		return dto;
+}
 
-
-
-
+public void updateMember(MemberDto dto)
+{
+	Connection conn = db.getConnection();
+	PreparedStatement pstmt = null;
+	String sql="update member set name=?,nickname=?,pass=?,email1=?,email2=? where num=?";
+	
+	try {
+		pstmt=conn.prepareStatement(sql);
+		
+		pstmt.setString(1, dto.getName());
+		pstmt.setString(2, dto.getNickname());
+		pstmt.setString(3, dto.getPass());
+		pstmt.setString(4, dto.getEmil1());
+		pstmt.setString(5, dto.getEmail2());
+		pstmt.setString(6, dto.getNum());
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}finally {
+		db.dbClose(pstmt, conn);
+	}
+}
+public boolean isEqualPass(String num, String pass)
+{
+	boolean b=false;
+	Connection conn = db.getConnection();
+	PreparedStatement pstmt = null;
+	String sql="select count(*) from member where num=? and pass=?";
+	ResultSet rs = null;
+	
+	try {
+		pstmt=conn.prepareStatement(sql);
+		
+		pstmt.setString(1, num);
+		pstmt.setString(2, pass);
+		
+		rs=pstmt.executeQuery();
+		
+		if(rs.next())
+		{
+			if(rs.getInt(1)==1)
+				
+				b=true;
+		}
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}finally {
+		db.dbClose(rs, pstmt, conn);
+	}	
+}
 
 
 

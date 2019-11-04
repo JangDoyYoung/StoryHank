@@ -25,7 +25,7 @@ public	void insertMember(MemberDto dto)
 			pstmt.setString(2, dto.getNickname());
 			pstmt.setString(3, dto.getId());
 			pstmt.setString(4, dto.getPass());
-			pstmt.setString(5, dto.getEmil1());
+			pstmt.setString(5, dto.getEmail1());
 			pstmt.setString(6, dto.getEmail2());
 		
 			pstmt.execute();
@@ -85,7 +85,7 @@ public	void insertMember(MemberDto dto)
 				dto.setNickname(rs.getString("nickname"));
 				dto.setId(rs.getString("id"));
 				dto.setPass(rs.getString("pass"));
-				dto.setEmil1(rs.getString("emil1"));
+				dto.setEmail1(rs.getString("email1"));
 				dto.setEmail2(rs.getString("email2"));
 				dto.setGaipday(rs.getTimestamp("gaipday"));
 				
@@ -122,7 +122,7 @@ public MemberDto getData(String num)
 			dto.setNickname(rs.getString("nickname"));
 			dto.setId(rs.getString("id"));
 			dto.setPass(rs.getString("pass"));
-			dto.setEmil1(rs.getString("email1"));
+			dto.setEmail1(rs.getString("email1"));
 			dto.setEmail2(rs.getString("email2"));
 			dto.setGaipday(rs.getTimestamp("gaipday"));
 			
@@ -148,7 +148,7 @@ public void updateMember(MemberDto dto)
 		pstmt.setString(1, dto.getName());
 		pstmt.setString(2, dto.getNickname());
 		pstmt.setString(3, dto.getPass());
-		pstmt.setString(4, dto.getEmil1());
+		pstmt.setString(4, dto.getEmail1());
 		pstmt.setString(5, dto.getEmail2());
 		pstmt.setString(6, dto.getNum());
 	} catch (SQLException e) {
@@ -186,6 +186,7 @@ public boolean isEqualPass(String num, String pass)
 	}finally {
 		db.dbClose(rs, pstmt, conn);
 	}	
+		return b;
 }
 
 

@@ -3,16 +3,16 @@ package dataDto;
 import java.sql.Timestamp;
 
 public class MemberDto {
-
+	
 	private String num;
 	private String name;
 	private String nickname;
 	private String id;
 	private String pass;
-	private String passch;
-	private String email;
-	private String emailch;
+	private String emil1;
+	private String email2;
 	private Timestamp gaipday;
+	
 	public String getNum() {
 		return num;
 	}
@@ -43,23 +43,17 @@ public class MemberDto {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public String getPassch() {
-		return passch;
+	public String getEmil1() {
+		return emil1;
 	}
-	public void setPassch(String passch) {
-		this.passch = passch;
+	public void setEmil1(String emil1) {
+		this.emil1 = emil1;
 	}
-	public String getEmail() {
-		return email;
+	public String getEmail2() {
+		return email2;
 	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getEmailch() {
-		return emailch;
-	}
-	public void setEmailch(String emailch) {
-		this.emailch = emailch;
+	public void setEmail2(String email2) {
+		this.email2 = email2;
 	}
 	public Timestamp getGaipday() {
 		return gaipday;
@@ -67,6 +61,6 @@ public class MemberDto {
 	public void setGaipday(Timestamp gaipday) {
 		this.gaipday = gaipday;
 	}
-	
+
 	
 }

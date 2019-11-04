@@ -52,5 +52,17 @@
 	</div>
 	<div class="footer">
 	</div>
+	<script type="text/javascript">
+		$(function(){
+			$("#menu_but").click(function(){
+		        $(".side_menu").css("right","0px");
+		    }) ;
+		 
+		     $("#close_but").click(function(){
+		        $(".side_menu").css("right","-350px"); 
+		     });
+		});
+		
+	</script>
 </body>
 </html>

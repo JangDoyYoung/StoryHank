@@ -75,3 +75,61 @@
     background: #333;
     color: #fff;
 }
+
+.text_enter{
+    border: 1px solid #ddd;
+    width: 750px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: #f8fcf2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.text_enter .lineword{
+    width: 600px;
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+}
+.text_enter .enter_but{
+    width: 90px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .4s;
+}
+.text_enter .enter_but:hover{
+    background: #333;
+    color: #fff;
+}
+.guest_list{
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.guest_list div{
+	padding: 20px;
+	box-sizing: border-box;
+	width: 750px;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+	font-size: 14px;
+	margin-bottom: 20px;
+	background: #f8fcf2;
+}
+.guest_list div .name_date{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	padding-bottom: 7px;
+	margin-bottom: 12px;
+}

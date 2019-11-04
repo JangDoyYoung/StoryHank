@@ -9,7 +9,7 @@ public class MemberDto {
 	private String nickname;
 	private String id;
 	private String pass;
-	private String emil1;
+	private String email1;
 	private String email2;
 	private Timestamp gaipday;
 	
@@ -43,11 +43,11 @@ public class MemberDto {
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
-	public String getEmil1() {
-		return emil1;
+	public String getEmail1() {
+		return email1;
 	}
-	public void setEmil1(String emil1) {
-		this.emil1 = emil1;
+	public void setEmail1(String emil1) {
+		this.email1 = emil1;
 	}
 	public String getEmail2() {
 		return email2;

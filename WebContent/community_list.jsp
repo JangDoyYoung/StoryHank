@@ -12,6 +12,8 @@
 		GuestBookDB db = new GuestBookDB();
 		
 		List<GuestBookDto> list = db.getList();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm");
 %>
 <result>
 	<%
@@ -20,8 +22,7 @@
 			<memodata>
 				<num><%= dto.getNum() %></num>
 				<subject><%= dto.getSubject() %></subject>
-				<nickname><%= dto.getNickname() %></nickname>
-				<wdate><%= dto.getWriteday() %></wdate>
+				<wdate><%= sdf.format(dto.getWriteday()) %></wdate>
 			</memodata>
 		<%}
 	%>

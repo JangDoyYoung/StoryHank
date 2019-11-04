@@ -16,7 +16,7 @@ public class GuestBookDB {
 	//추가
 	public void insertGuest(GuestBookDto dto)
 	{
-		String sql = "insert into guestbook values (seq_num.nextval,?,?,sysdate)";
+		String sql = "insert into guestbook values (seq_num.nextval,?,sysdate)";
 		
 		Connection conn = db.getConnection();
 		PreparedStatement pstmt = null;
@@ -26,7 +26,6 @@ public class GuestBookDB {
 			pstmt = conn.prepareStatement(sql);
 			
 			pstmt.setString( 1, dto.getSubject() );
-			pstmt.setString( 2, dto.getNickname() );
 			
 			pstmt.execute();
 		}
@@ -64,7 +63,6 @@ public class GuestBookDB {
 				GuestBookDto dto = new GuestBookDto();
 				dto.setNum( rs.getString("num") );
 				dto.setSubject( rs.getString("subject") );
-				dto.setNickname( rs.getString("nickname") );
 				dto.setWriteday( rs.getTimestamp("writeday") );
 				
 				list.add(dto);
@@ -106,7 +104,6 @@ public class GuestBookDB {
 			{
 				dto.setNum( rs.getString("num") );
 				dto.setSubject( rs.getString("subject") );
-				dto.setNickname( rs.getString("nickname") );
 				dto.setWriteday( rs.getTimestamp("writeday") );
 			}
 		}

@@ -8,13 +8,13 @@ import java.util.List;
 import java.util.Vector;
 
 import data.oracle.DbConnect;
-import dataDto.GuestBookDto;
+import datadto.GuestBookDto;
 
 public class GuestBookDB {
 	DbConnect db = new DbConnect();
 	
 	//추가
-	public void insertGuest(GuestBookDto dto)
+	public void insertGuest(String subject)
 	{
 		String sql = "insert into guestbook values (seq_num.nextval,?,sysdate)";
 		
@@ -25,7 +25,7 @@ public class GuestBookDB {
 		{
 			pstmt = conn.prepareStatement(sql);
 			
-			pstmt.setString( 1, dto.getSubject() );
+			pstmt.setString( 1, subject );
 			
 			pstmt.execute();
 		}

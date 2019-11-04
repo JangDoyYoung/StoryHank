@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<%@page import="dataDto.GuestBookDto"%>
+<%@page import="datadto.GuestBookDto"%>
 <%@page import="dataDb.GuestBookDB"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.List"%>

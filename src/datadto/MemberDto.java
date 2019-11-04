@@ -1,4 +1,4 @@
-package dataDto;
+package datadto;
 
 import java.sql.Timestamp;
 

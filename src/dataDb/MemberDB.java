@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Vector;
 
 import data.oracle.DbConnect;
-import dataDto.MemberDto;
+import datadto.MemberDto;
 
 public class MemberDB {
 	DbConnect db = new DbConnect();

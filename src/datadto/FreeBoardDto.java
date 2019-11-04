@@ -2,11 +2,11 @@ package dataDto;
 
 import java.sql.Timestamp;
 
-public class GuestBookDto {
+public class FreeBoardDto {
 	private String num;
 	private String subject;
-	private String nickname;
 	private Timestamp writeday;
+	private String readcount;
 	
 	public String getNum() {
 		return num;
@@ -20,17 +20,16 @@ public class GuestBookDto {
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
-	public String getNickname() {
-		return nickname;
-	}
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
-	}
 	public Timestamp getWriteday() {
 		return writeday;
 	}
 	public void setWriteday(Timestamp writeday) {
 		this.writeday = writeday;
 	}
-	
+	public String getReadcount() {
+		return readcount;
+	}
+	public void setReadcount(String readcount) {
+		this.readcount = readcount;
+	}
 }

@@ -34,7 +34,7 @@
         <li tabindex="3">
           <div>
             <a href="woo/index.jsp">
-              <h3>장도영 멋쟁이</h3>
+              <h3>장도영 is</h3>
               <p id="idol">I-DOL</p>
             </a>
           </div>
@@ -61,6 +61,57 @@
 		     $("#close_but").click(function(){
 		        $(".side_menu").css("right","-350px"); 
 		     });
+		     
+		     var modal = document.getElementById('mymodal');
+		     
+		   
+		        var btn = document.getElementById("logsign");
+		 
+		      
+		        var span = document.getElementsByClassName("modalclose")[0];                                          
+		 
+		      
+		        btn.onclick = function() {
+		            modal.style.display = "block";
+		        }
+		 
+		       
+		        span.onclick = function() {
+		            modal.style.display = "none";
+		        }
+		 
+		  
+		        window.onclick = function(event) {
+		            if (event.target == modal) {
+		                modal.style.display = "none";
+		            }
+		        }
+
+		});
+		$(document).ready(function(){
+			$("#signbtn").click(function(){
+				$("#main").animate({left:"22.5%"},400);
+				$("#main").animate({left:"30%"},500);
+				$("#loginform").css("visibility","hidden");
+				$("#loginform").animate({left:"25%"},400);
+				
+				$("#signform").animate({left:"25%"},400);
+				$("#signform").animate({left:"30%"},400);
+				$("#signform").css("visibility","visible");
+			});
+			
+			$("#loginbtn").click(function(){
+				$("#main").animate({left:"77.5%"},400);
+				$("#main").animate({left:"70%"},500);
+				$("#signform").css("visibility","hidden");
+				$("#signform").animate({left:"75%"},400);
+				
+				$("#loginform").animate({left:"83.5%"},400);
+				$("#loginform").animate({left:"70%"},500);
+				$("#loginform").css("visibility","visible");
+				
+				
+			});
 		});
 		
 	</script>

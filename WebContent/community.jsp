@@ -12,7 +12,109 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link href="css/community.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-
+<script>
+	$(function(){
+    	list();
+    	
+        $("#qaboard").hide();
+        $("#guestboard").hide();
+      
+        
+        $("#free").click(function(){
+           $("#freeboard").show(); 
+            $("#qaboard").hide();
+            $("#guestboard").hide();
+        });
+        
+        $("#qa").click(function(){
+           $("#qaboard").show(); 
+            $("#freeboard").hide();
+            $("#guestboard").hide();
+        });
+        
+        $("#guest").click(function(){
+           $("#guestboard").show(); 
+            $("#qaboard").hide();
+            $("#freeboard").hide();
+        }); 
+        
+        $("#menu_but").click(function(){
+	        $(".side_menu").css("right","0px");
+	    }) ;
+	 
+	     $("#close_but").click(function(){
+	        $(".side_menu").css("right","-350px"); 
+	     });
+	     
+	     
+	     
+	     $("#enter_but").click(function(){
+	    	 
+	    	 var subject = $('#subject').val();
+	    	 
+	    	 $.ajax({
+	    		type: "post",
+	    		url: "guestbook_insert.jsp",
+	    		dataType: "xml",
+	    		data: {"subject":subject},
+	    		
+	    		success : function(data){
+					$("#subject").val("");
+					$("#subject").focus();
+					// 추가후 메모리스트 다시 출력
+					list();
+				},
+				
+				statusCode : {
+					404: function(){
+						alert("url을 찾을수 없어요");
+					},
+					500: function(){
+						alert("서버 오류");
+					}
+				}
+				
+	    	 });
+	     });
+	     
+	    
+    });
+	
+	 function list()
+     {
+    	 $.ajax({
+				type: "get",
+				url: "community_list.jsp",
+				dataType: "xml",
+				
+				success: function(data)
+				{
+					var str = "";
+					
+					$(data).find("memodata").each(function(){
+						var s = $(this);
+						str += "<div>";
+						str += "<p class='name_date'>";
+						str += "<span>" + s.find("nickname").text() + "</span>";
+						str += "<span>" + s.find("wdate").text() + "</span>";
+						str += "</p>";
+						str += "<p>" + s.find("subject").text() + "</p>";
+						str += "</div>";
+					});
+					$("#guest_list").append(str);
+					
+				},
+				statusCode : {
+					404: function(){
+						alert("url을 찾을수 없어요");
+					},
+					500: function(){
+						alert("서버 오류");
+					}
+				}
+			});
+     }
+</script>
 </head>
 <body>
 <%
@@ -76,14 +178,16 @@
 		</div>
 		<div class="text_list" id="guestboard">
 			<div class="text_enter">
-	           <textarea class="lineword"  placeholder="한줄짜리 글을 남겨보세요"></textarea>
-	            <p class="enter_but" id="enter_but">메모하기</p>
+	           <textarea class="lineword" id="subject" placeholder="한줄짜리 글을 남겨보세요" autofocus="autofocus"></textarea>
+	            <!-- <p class="enter_but" id="enter_but">메모하기</p> -->
+	            <button class="enter_but" id="enter_but">메모하기</button>
 	       </div>
 	       <div id="guest_list" class="guest_list">
 	       		
 	       </div>
 		</div>
 	</div>
+<<<<<<< HEAD
 	<script>
     $(document).ready(function(){
     	list();
@@ -213,5 +317,8 @@
 	     }
     });
 </script>
+=======
+	
+>>>>>>> refs/remotes/origin/master
 </body>
 </html>

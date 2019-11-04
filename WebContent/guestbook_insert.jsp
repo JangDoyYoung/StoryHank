@@ -8,12 +8,13 @@
 	request.setCharacterEncoding("utf-8");
 	String subject = request.getParameter("subject");
 	
-	System.out.println(subject);
-	
 	GuestBookDB db = new GuestBookDB();
-	GuestBookDto dto = new GuestBookDto();
+	//GuestBookDto dto = new GuestBookDto();
 	
-	dto.setSubject(subject);
+	//dto.setSubject(subject);
 	
-	db.insertGuest(dto);
+	db.insertGuest(subject);
 %>
+<success>
+yes
+</success>

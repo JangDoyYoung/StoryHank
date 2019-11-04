@@ -49,7 +49,9 @@
 	     
 	     
 	     $("#enter_but").click(function(){
+	    	 
 	    	 var subject = $('#subject').val();
+	    	 
 	    	 $.ajax({
 	    		type: "post",
 	    		url: "guestbook_insert.jsp",
@@ -57,7 +59,8 @@
 	    		data: {"subject":subject},
 	    		
 	    		success : function(data){
-					alert($(data).text());
+					$("#subject").val("");
+					$("#subject").focus();
 					// 추가후 메모리스트 다시 출력
 					list();
 				},
@@ -175,7 +178,7 @@
 		</div>
 		<div class="text_list" id="guestboard">
 			<div class="text_enter">
-	           <textarea class="lineword" id="subject" placeholder="한줄짜리 글을 남겨보세요"></textarea>
+	           <textarea class="lineword" id="subject" placeholder="한줄짜리 글을 남겨보세요" autofocus="autofocus"></textarea>
 	            <!-- <p class="enter_but" id="enter_but">메모하기</p> -->
 	            <button class="enter_but" id="enter_but">메모하기</button>
 	       </div>

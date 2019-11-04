@@ -15,3 +15,6 @@
 	
 	db.insertGuest(subject);
 %>
+<success>
+yes
+</success>

@@ -1,6 +1,6 @@
-<%@page import="java.util.Vector"%>
+	<%@page import="java.util.Vector"%>
 <%@page import="java.util.List"%>
-<%@page import="dataDto.GuestBookDto"%>
+<%@page import="datadto.GuestBookDto"%>
 <%@page import="dataDb.GuestBookDB"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
@@ -62,13 +62,13 @@
 					<td style="width: 90px;">작성일</td>
 					<td style="width: 80px;">답변여부</td>
 				</tr>
-				<tr class="info" style="height: 50px;">
+				<!-- <tr class="info" style="height: 50px;">
 					<td>1</td>
 					<td>제목 나오는 부분</td>
 					<td>작성자</td>
 					<td>2019-10-30</td>
 					<td>O</td>
-				</tr>
+				</tr> -->
 			</table>
 			<div class="but_line">
 				<p>글쓰기</p>
@@ -169,6 +169,36 @@
 							str += "</div>";
 						});
 						$("#guest_list").append(str);
+						
+					},
+					statusCode : {
+						404: function(){
+							alert("url을 찾을수 없어요");
+						},
+						500: function(){
+							alert("서버 오류");
+						}
+					}
+				});
+	    	 
+	    	 $.ajax({
+					type: "get",
+					url: "qna_list.jsp",
+					dataType: "xml",
+					
+					success: function(data)
+					{
+						var str = "";
+					
+						
+						$(data).find("qnadata").each(function(){
+							var s = $(this);
+							str += "<td>"+s.find("num")+"</td><br>";
+							str += "<td>"+s.find("title")+"</td><br>";
+							str += "<td>"+s.find("write_date")+"</td><br>";
+							
+						});
+						$("#qaboard").append(str);
 						
 					},
 					statusCode : {

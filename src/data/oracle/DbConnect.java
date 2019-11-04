@@ -9,9 +9,9 @@ import java.sql.Statement;
 
 public class DbConnect {
 	String driver = "oracle.jdbc.driver.OracleDriver";
-	String url = "jdbc:oracle:thin:@fourketdb.c4ssz8t1w7vl.ap-northeast-2.rds.amazonaws.com:1521:ORCL";
-	String user = "master";
-	String pass = "master1234";
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String user="angel2";
+	String pass="a1234";
 	
 	public DbConnect()
 	{

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 import data.oracle.DbConnect;
+import dataDto.MemberDto;
 
 public class MemberDB {
 	DbConnect db = new DbConnect();

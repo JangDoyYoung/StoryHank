@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Vector;
 
 import data.oracle.DbConnect;
-import datadto.GuestBookDto;
+import dataDto.GuestBookDto;
 
 public class GuestBookDB {
 	DbConnect db = new DbConnect();
